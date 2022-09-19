@@ -187,7 +187,6 @@ header {
     height: 1px;
   }
   header {
-    padding: 0 10%;
     display: flex;
     align-items: center;
   }
