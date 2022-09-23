@@ -65,12 +65,42 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
+.main-headingPi{
+  text-align: center;
+  font-size: 400%;
+  font-family: PoppinsBold;
+  margin: 3% 0;
+  background: linear-gradient(rgb(255, 32, 69), rgb(232, 85, 109), rgb(214, 110, 127));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-headingO{
+  text-align: center;
+  font-size: 300%;
+  font-family: PoppinsBold;
+  margin: 3%;
+  background: linear-gradient(rgb(255, 81, 0), rgb(231, 105, 47), rgb(255, 143, 14));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .purple{
   background: linear-gradient(rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.pink{
+  background: linear-gradient(rgb(255, 32, 69), rgb(232, 85, 109), rgb(214, 110, 127));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.orange{
+  background: linear-gradient(rgb(255, 81, 0), rgb(231, 105, 47), rgb(255, 143, 14));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .blue{
   background: linear-gradient(rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
@@ -112,13 +142,33 @@ p.blue:after {
   animation: line-slide 1.5s ease-in-out forwards;
 }
 
+p.pink:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgb(255, 32, 69), rgb(232, 85, 109), rgb(214, 110, 127));
+  animation: line-slide 1.5s ease-in-out forwards;
+}
+
+p.pink:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to left,rgb(255, 32, 69), rgb(232, 85, 109), rgb(214, 110, 127));
+  animation: line-slide 1.5s ease-in-out forwards;
+}
+
 p.purple:before {
   content: "";
   position: absolute;
   height: 3px;
   left: 0;
   bottom: 0;
-  background: linear-gradient(rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
+  background: linear-gradient(to right, rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
   animation: line-slide 1.5s ease-in-out forwards;
 }
 
@@ -128,7 +178,7 @@ p.purple:after {
   height: 3px;
   right: 0;
   top: 0;
-  background: linear-gradient(rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
+  background: linear-gradient(to left, rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
   animation: line-slide 1.5s ease-in-out forwards;
 }
 
@@ -138,7 +188,7 @@ p.green:before {
   height: 3px;
   left: 0;
   bottom: 0;
-  background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+  background: linear-gradient(to right, rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
   animation: line-slide 1.5s ease-in-out forwards;
 }
 
@@ -148,7 +198,27 @@ p.green:after {
   height: 3px;
   right: 0;
   top: 0;
-  background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+  background: linear-gradient(to left, rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+  animation: line-slide 1.5s ease-in-out forwards;
+}
+
+p.orange:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgb(255, 81, 0), rgb(231, 105, 47), rgb(255, 143, 14));
+  animation: line-slide 1.5s ease-in-out forwards;
+}
+
+p.orange:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to left, rgb(255, 81, 0), rgb(231, 105, 47), rgb(255, 143, 14));
   animation: line-slide 1.5s ease-in-out forwards;
 }
 
@@ -246,6 +316,26 @@ p.green:after {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .main-headingO{
+    text-align: center;
+    font-size: 300%;
+    font-family: PoppinsBold;
+    margin: 3%;
+    background: linear-gradient(rgb(255, 81, 0), rgb(231, 105, 47), rgb(255, 143, 14));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .main-headingpi{
+    text-align: center;
+    font-size: 300%;
+    font-family: PoppinsBold;
+    margin: 3%;
+    background: linear-gradient(rgb(255, 32, 69), rgb(232, 85, 109), rgb(214, 110, 127));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   
   .main-subheading {
     text-align: center;
@@ -274,6 +364,26 @@ p.green:after {
     animation: line-slide 1.5s ease-in-out forwards;
   }
   
+  p.orange:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(255, 81, 0), rgb(231, 105, 47), rgb(255, 143, 14));
+    animation: line-slide 1.5s ease-in-out forwards;
+  }
+  
+  p.orange:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgb(255, 81, 0), rgb(231, 105, 47), rgb(255, 143, 14));
+    animation: line-slide 1.5s ease-in-out forwards;
+  }
+
   p.green:before {
     content: "";
     position: absolute;

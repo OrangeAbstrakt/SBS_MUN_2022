@@ -10,10 +10,14 @@
 	background-image: url('../assets/Logo_UNHRC.JPG');
 }
 .c2{
-	
+	background-image: url('../assets/Logo_UNSC.png');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .c3{
-	
+	background-image: url('../assets/Logo_AIPPM.jpeg');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .c4{
 	background-image: url('../assets/Logo_AFET.JPG');
@@ -50,6 +54,7 @@ html, body {
 	overflow: hidden;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+	background: white;
 }
 
 .card:hover {
