@@ -1,23 +1,29 @@
 /* General */
 header {
-  color: white;
+  background: white;
 }
+
 .special-heading-container {
   padding: 5% 5% 10% 5%;
   text-align: center;
   width: 100%;
   height: 100%;
 }
+
 .special-heading-container img {
   width: 26%;
 }
+
 .heading-container {
   padding: 0% 0 7% 0;
 }
+
 .common-heading {
   font-size: 2vw;
   font-family: Poppins;
+
 }
+
 .common-heading:before {
   content: "";
   position: absolute;
@@ -25,47 +31,127 @@ header {
   height: 3px;
   bottom: 0;
   background: #B01116;
+
+  
 }
-.main-heading {
+
+.main-headingB{
   text-align: center;
   font-size: 400%;
   font-family: PoppinsBold;
   margin: 3% 0;
+  background: linear-gradient(rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.main-headingG{
+  text-align: center;
+  font-size: 400%;
+  font-family: PoppinsBold;
+  margin: 3% 0;
+  background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-headingP{
+  text-align: center;
+  font-size: 400%;
+  font-family: PoppinsBold;
+  margin: 3% 0;
+  background: linear-gradient(rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple{
+  background: linear-gradient(rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.blue{
+  background: linear-gradient(rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green{
+  background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .main-subheading {
   text-align: center;
   font-size: 3rem;
   font-family: Poppins;
   display: inline-block;
 }
-.main-subheading:before {
+
+
+p.blue:before {
   content: "";
   position: absolute;
   height: 3px;
   left: 0;
   bottom: 0;
-  background: white;
+  background: linear-gradient(to right, rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
   animation: line-slide 1.5s ease-in-out forwards;
 }
-.main-subheading:after {
+
+p.blue:after {
   content: "";
   position: absolute;
   height: 3px;
   right: 0;
   top: 0;
-  background: white;
+  background: linear-gradient(to left, rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
   animation: line-slide 1.5s ease-in-out forwards;
 }
-.committee-logo {
-  width: 300px;
+
+p.purple:before {
+  content: "";
   position: absolute;
-  bottom: -100px;
-  left: calc(50% - 150px);
-  z-index: 2;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
+  animation: line-slide 1.5s ease-in-out forwards;
 }
-.committee-logo img {
-  width: 300px;
+
+p.purple:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  top: 0;
+  background: linear-gradient(rgb(115, 8, 113), rgb(60, 39, 220), rgb(92, 170, 243));
+  animation: line-slide 1.5s ease-in-out forwards;
 }
+
+p.green:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+  animation: line-slide 1.5s ease-in-out forwards;
+}
+
+p.green:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  top: 0;
+  background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+  animation: line-slide 1.5s ease-in-out forwards;
+}
+
 .common-button button {
   width: auto;
   padding: 1% 2%;
@@ -78,91 +164,21 @@ header {
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
+
 .common-button button:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #b01116;
 }
 
 #text {
-  /* background-color: #e6e6e6; */
+  margin-left: 50px;
 }
+
 .info-container {
   padding: 5% 0;
   border-bottom: solid 1px #e6e6e6;
 }
-.text-container {
-  font-family: Raleway;
-  text-align: justify;
-  width: 80%;
-  font-size: 125%;
-  padding: 2.5% 5%;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-}
-.pdf-container {
-  width: 85%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 2.5% 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.matrix {
-  width: 47.5%;
-  float: left;
-  text-align: left;
-}
-.rl {
-  width: 47.5%;
-  float: right;
-  text-align: right;
-}
 
-/* .coming-soon {
-  width: 80%;
-  text-align: center;
-  margin: 5% auto;
-  font-family: Poppins;
-  font-size: 150%;
-} */
-
-/* Executive Board */
-.eb-member-container {
-	display: flex;
-  margin-bottom: 7.5%;
-  font-size: 17.5px;
-}
-.eb-member-container:last-child {
-  margin-bottom: 0;
-}
-.write-up {
-  margin-left: 2.5%;
-}
-.image-container {
-  margin: 2%;
-  text-align: center;
-}
-.image-container img {
-  object-fit: cover;
-  object-position: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-}
-.name {
-  font-family: Raleway;
-  padding-top: 2%;
-  font-size: 125%;
-}
-.position {
-  padding: 1%;
-  font-family: RalewayThin;
-  font-size: 100%;
-  font-style: italic;
-}
 
 /* Animation */
 @keyframes line-slide {
@@ -178,150 +194,179 @@ header {
 
 /* Responsive */
 @media screen and (max-width: 600px) {
-  .common-heading {
-    font-size: 200%;
-  }
 
-  .common-heading:before {
-    height: 1px;
-  }
-  header {
-    display: flex;
-    height: 750px;
-    padding: 0px;
-    padding-top: 15%;
-    margin: 0px;
-    align-items: center;
-  }
-
-
-  .special-heading-container{
+  .special-heading-container {
+    padding: 5% 5% 10% 5%;
+    text-align: center;
     width: 100%;
-    height: 100%;
+    height: 70%;
+    margin-bottom: 0%;
   }
-  .main-heading {
-    font-size: 200%;
+  
+  .special-heading-container img {
+    margin-top: 50px;
+    width: 80%;
   }
-  .main-subheading  {
-    font-size: 100%;
+
+  .common-heading {
+    font-size: 2rem;
+    font-family: Poppins;
   }
-  .main-subheading  {
+  
+  .common-heading:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background: #B01116;
+  }
+
+  #text{
+    margin-left: 10px;
+  }
+  
+  .main-headingB {
+    text-align: center;
+    font-size: 300%;
+    font-family: PoppinsBold;
+    margin: 3%;
+    background: linear-gradient(rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .main-headingG {
+    text-align: center;
+    font-size: 300%;
+    font-family: PoppinsBold;
+    margin: 3%;
+    background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .main-subheading {
+    text-align: center;
     font-size: 1.5rem;
+    font-family: Poppins;
+    display: inline-block;
   }
-  .main-subheading:before {
-    height: 1px;
+  
+  p.blue:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
+    animation: line-slide 1.5s ease-in-out forwards;
   }
-  .main-subheading:after {
-    height: 1px;
+  
+  p.blue:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, rgb(56, 12, 255), rgb(4, 97, 154), rgb(6, 189, 213));
+    animation: line-slide 1.5s ease-in-out forwards;
   }
-  .common-button {
+  
+  p.green:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+    animation: line-slide 1.5s ease-in-out forwards;
+  }
+  
+  p.green:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgb(4, 100, 25), rgb(45, 164, 29), rgb(63, 231, 88));
+    animation: line-slide 1.5s ease-in-out forwards;
+  }
+  .common-button{
+    top: 100px;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    gap:  10px;
+  }
+  
+  .btn-1{
+    grid-row: 1/2;
+  }
+  .btn-2{
+    grid-row: 2/3;
+  }
+  .btn-3{
+    grid-row: 3/4;
+  }
+
+  .common-button button {
+    width: auto;
+    padding: 1% 2%;
+    color: #ffffff;
+    border: solid 2px #b01116;
+    background-color: #b01116;
+    font-family: 'Poppins';
+    font-size: 80%;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .common-button button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #b01116;
+  }
+  
+  #text {
+    margin-bottom: 300px;    
+    bottom: 350px;
+  }
+
+  .info-container {
+    padding: 5% 0;
+    border-bottom: solid 1px #e6e6e6;
+  }
+
+  .text-container {
+    font-family: Raleway;
+    text-align: justify;
+    width: 80%;
+    font-size: 125%;
+    padding: 2.5% 5%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pdf-container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5% 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .matrix {
+    width: 47.5%;
+    float: left;
     text-align: left;
   }
-  .common-button button {
-    margin-bottom: 5%;
-  }
-  .text-container {
-    font-size: 120%;
+  .rl {
+    width: 47.5%;
+    float: right;
+    text-align: right;
   }
 
-
-  .eb-member-container {
-  	display: flex;
-    flex-direction: column;
-    margin: 20% 0;
-    font-size: 17.5px;
-  }
-  .eb-member-container:first-child {
-    margin-top: 0;
-  }
-  .eb-member-container:last-child {
-    margin-bottom: 0;
-  }
-  .write-up {
-    margin-left: 0;
-  }
-  .image-container {
-    margin: 10% 0;
-    text-align: center;
-  }
-}
-body .button-effect a {
-  margin:25px 0px;
-  background-color: #b01116;
-  color: #fff;
-  font-family: Poppins;
-}
-
-/* button styles !!!YOU NEED THEM !!!ALSO YOU NEED TO ADD FONTWESOME */
-.effect {
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  color: #fff;
-  border: 2px solid black;
-  text-transform: capitalize;
- /* background-color: - add your own background-color */
-  font-family: 'Roboto', sans-serif;
- /* put your font-family */
-  font-size: 18px;
-  padding: 15px 0px;
-  width: 180px;
-  overflow: hidden;
-}
-/* effect-3 styles */
-.effect.effect-3 {
-  transition: all 0.2s linear 0s;
-}
-.effect.effect-3:before {
-  content: "\f019";
-  font-family: FontAwesome;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 30px;
-  transition: all 0.2s linear 0s;
-}
-.effect.effect-3:hover {
-  text-indent: -9999px;
-}
-.effect.effect-3:hover:before {
-  top: 0;
-  text-indent: 0;
-}
-
-.main-subheading {
-  text-align: center;
-  font-size: 250%;
-  font-family: Poppins;
-  display: inline-block;
-  animation: zoom 1.5s;
-}
-.main-subheading:before {
-  content: "";
-  position: absolute;
-  height: 3px;
-  left: 0;
-  bottom: 0;
-  background: white;
-  animation: line-slide 1.5s ease-in-out forwards;
-}
-.main-subheading:after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  right: 0;
-  top: 0;
-  background: white;
-  animation: line-slide 1.5s ease-in-out forwards;
-}
 @keyframes line-slide {
   from {
     width: 0;
@@ -341,4 +386,6 @@ body .button-effect a {
     opacity: 1;
     scale: 1;
   }
+}
+
 }
